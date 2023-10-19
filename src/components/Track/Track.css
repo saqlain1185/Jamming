@@ -1,0 +1,36 @@
+.Track {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+  
+.Track-information {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-bottom: .25rem;
+  }
+  
+.Track-information p {
+    font-weight: 200;
+}
+
+.Track-action {
+    color: white;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin: .125rem;
+    padding-right: .5rem;
+  }
+  
+  .Track-action:hover {
+    cursor: pointer;
+    color: magenta;
+  }

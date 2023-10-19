@@ -1,0 +1,66 @@
+.Playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    border: 1px solid white;
+    padding: .88rem;
+    background-color: rgba(1, 12, 63, 0.7);
+    margin-left: 5px;
+    margin-right: 5px;
+    max-height: 650px;
+    overflow-y: scroll;
+}
+
+.Playlist-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align vertically centered */
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.Playlist-save-icon {
+    width: 40px; 
+    cursor: pointer;
+    transition: .25s;
+    margin-left: 5px;
+}
+
+.Playlist-save-icon:hover {
+    content: url('./SaveMagenta.png'); 
+}
+
+.Playlist input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: rgba(1, 12, 63, 0.7);
+    padding-left: 10px;
+    border-bottom: 1px solid lightgray;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: .5rem;
+    margin-top: .25rem;
+}
+
+.Playlist-save {
+    display: none; /* Hide the original SAVE button */
+}
+
+.Playlist-tracklist {
+    width: 100%; /* Ensure tracklist occupies full width */
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+  .Playlist {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
