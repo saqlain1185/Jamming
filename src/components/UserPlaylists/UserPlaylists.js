@@ -1,20 +1,23 @@
-import React from 'react';
-import './UserPlaylists.css';
-
-function UserPlaylists({ playlists, onSelect, onCreateNewPlaylist }) {
+import React from 'react'
+import "./UserPlaylists.js"
+const UserPlaylists = ({ playlists,onSelect ,onCreateNewPlaylist }) => {
   return (
-    <div className="UserPlaylists">
-      <h2>Your Playlists</h2>
+    <div className='Userplaylists'>
+      <h2>your playlists</h2>
       <ul>
         {playlists.map(playlist => (
-          <li key={playlist.id} onClick={() => onSelect(playlist)}>
+          <li key={playlist.id} onClick={() => onSelect(playlist)} >
             {playlist.name}
           </li>
         ))}
       </ul>
-      <button className="new-playlist" onClick={onCreateNewPlaylist}>NEW PLAYLIST</button>
+      <button className='new-playlist' onClick={onCreateNewPlaylist}>New PLAYLIST</button>
     </div>
-  );
+  )
 }
 
-export default UserPlaylists;
+export default UserPlaylists
+
+
+
+
