@@ -1,59 +1,64 @@
-.UserPlaylists {
-    width: 25%;
-    border: 1px solid white;
-    padding: .88rem;
-    background-color: rgba(1, 12, 63, 0.7);
-    text-align: center;
-    max-height: 650px; 
-    overflow-y: scroll;   
-}
 
-.UserPlaylists h2 {
-  text-align: left;
-}
+.UserPlaylists{
+  width: 25%;
+  border: 1px solid white;
+  padding: .88rem;
+  background-color: rgba(1, 12, 63, 0.7);
+  text-align: center;
+  max-height: 650px; 
+  overflow-y: scroll;   
+} 
 
-.UserPlaylists ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-  }
-  
+.UserPlaylists h2{
+  text-align: left; 
+} 
+.UserPlaylists ul { 
+    list-style: none; 
+    padding: 0; 
+    text-align: left; 
+  } 
+   
 .UserPlaylists li {
     font-size: 1.125rem;
     margin-bottom: 10px;
-    cursor: pointer; 
-    transition: color 0.3s; 
-  }
+    cursor: pointer;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
   
-.UserPlaylists li:hover {
-    color: magenta;
-  }
+.UserPlaylists li:hover { 
+    color: magenta; 
+  } 
 
-.new-playlist {
-    width: 35%;
-    min-width: 9rem;
-    margin-top: 1rem;
-    padding: .5rem 0;
-    background-color:rgba(1, 12, 63, .7);
-    color: white;
-    text-align: center;
-    font-size: .75rem;
-    transition: .25s;
-    border: 1px solid white;
-    border-radius: 6px;
+.new-playlist { 
+    width: 35%; 
+    min-width: 9rem; 
+    margin-top: 1rem; 
+    padding: .5rem 0; 
+    background-color:rgba(1, 12, 63, .7);  
+    color: white;  
+    text-align: center; 
+    font-size: .75rem; 
+    transition: .25s; 
+    border: 1px solid white; 
+    border-radius: 6px; 
 }
 
-.new-playlist:hover {
-  background-color: rgba(108, 65, 233, .7);
-}
+.new-playlist:hover { 
+  background-color: rgba(108, 65, 233, .7); 
+} 
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
-@media only screen and (max-width: 1020px) {
-  .UserPlaylists {
-    width: 90%;
-  }
-}
+::-webkit-scrollbar { 
+  width: 0px; 
+  background: transparent; 
+} 
+ 
+@media only screen and (max-width: 1020px) { 
+  .UserPlaylists { 
+    width: 90%; 
+  } 
+} 
+ 
