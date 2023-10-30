@@ -1,5 +1,5 @@
 import React from 'react'
-import "./UserPlaylists.js"
+import "./UserPlaylists.css"
 const UserPlaylists = ({ playlists,onSelect ,onCreateNewPlaylist }) => {
   return (
     <div className='Userplaylists'>
